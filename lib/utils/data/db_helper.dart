@@ -36,9 +36,9 @@ class DBHelper {
     return await openDatabase(
       dirPath,
       version: 1,
-      onCreate: (db, version) {
+      onCreate: (db, version)async {
         // All Tables will create here
-        db.execute('''
+        await db.execute('''
 CREATE TABLE $table_name (
           $column_s_no INTEGER PRIMARY KEY AUTOINCREMENT, 
           $column_title TEXT, 
