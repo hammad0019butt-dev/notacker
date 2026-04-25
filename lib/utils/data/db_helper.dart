@@ -23,7 +23,7 @@ class DBHelper {
   }
 
   // Open Database
-  /*Table name / Column name variables */
+  /*Table name / Column names variables */
   final table_name = 'notacker';
   final column_s_no = 's_no';
   final column_title = 'title';
